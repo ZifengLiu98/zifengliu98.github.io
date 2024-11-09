@@ -71,6 +71,22 @@
   background-color: #0077b5;
 }
 
+.google-scholar {
+  color: #4285f4; /* Google Scholar 蓝色 */
+}
+
+.research-gate {
+  color: #00CCBB; /* ResearchGate 绿色 */
+}
+
+.google-scholar:hover {
+  background-color: #4285f4;
+}
+
+.research-gate:hover {
+  background-color: #00CCBB;
+}
+
 .angellist:hover {
   background-color: grey;
 }
