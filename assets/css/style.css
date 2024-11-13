@@ -336,7 +336,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: rgba(188, 117, 218, 0.4); repeat;
   position: relative;
 }
 
