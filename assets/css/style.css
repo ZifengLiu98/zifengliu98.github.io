@@ -565,7 +565,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008073 !important;
+  color: rgba(188, 117, 218, 0.4) !important; /*Zifeng background*/
 }
 
 /* .teal-text {
@@ -575,7 +575,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #008073 !important;
+  background-color: rgba(188, 117, 218, 0.4) !important;/*Zifeng background*/
 }
 
 /* .teal {
@@ -618,7 +618,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #009688;
+    color: rgba(188, 117, 218, 0.4);
     height: 56px;
     line-height: 56px;
   }
