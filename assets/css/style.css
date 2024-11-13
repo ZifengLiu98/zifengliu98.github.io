@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(188, 117, 218, 0.4); 
+  border: 6px solid rgba(33, 150, 243, 0.2); 
   border-radius: 50% !important;
 }
 
@@ -565,7 +565,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: rgba(188, 117, 218, 0.4) !important; /*Zifeng background*/
+  color: rgba(33, 150, 243, 0.2) !important; /*Zifeng background*/
 }
 
 /* .teal-text {
@@ -575,7 +575,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: rgba(188, 117, 218, 0.4) !important;/*Zifeng background*/
+  background-color: rgba(33, 150, 243, 0.2) !important;/*Zifeng background*/
 }
 
 /* .teal {
@@ -618,7 +618,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: rgba(188, 117, 218, 0.4);
+    color: rgba(33, 150, 243, 0.2);
     height: 56px;
     line-height: 56px;
   }
