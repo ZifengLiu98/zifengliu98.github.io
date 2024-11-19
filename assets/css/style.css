@@ -492,6 +492,13 @@ a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
 }
 
+.row-left-align {
+  text-align: left; /* Aligns the text to the left */
+  margin: 0 auto;   /* Centers the content horizontally */
+  padding: 10px;    /* Adds some padding for spacing */
+}
+
+
 #skills .card.large {
   height: 360px;
 }
