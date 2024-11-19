@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(33, 150, 243, 0.2); 
+  border: 6px solid #ff9678; 
   border-radius: 50% !important;
 }
 
@@ -336,7 +336,7 @@ h3 {
 } */
 
 #intro.section {
-  background: rgba(33, 150, 243, 0.2); repeat;
+  background: #ff9678; repeat;
   position: relative;
 }
 
@@ -383,7 +383,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: #ff9678;
 }
 
 .card {
@@ -565,7 +565,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: rgba(33, 150, 243, 0.2) !important; /*Zifeng background*/
+  color: #ff9678 !important; /*Zifeng background*/
 }
 
 /* .teal-text {
@@ -575,7 +575,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: rgba(33, 150, 243, 0.2) !important;/*Zifeng background*/
+  background-color: #ff9678 !important;/*Zifeng background*/
 }
 
 /* .teal {
@@ -618,7 +618,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: rgba(33, 150, 243, 0.2);
+    color: #ff9678;
     height: 56px;
     line-height: 56px;
   }
