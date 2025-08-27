@@ -1,0 +1,674 @@
+/*!
+Theme Name: Divi_CoE_Child
+Description: Primary Divi Child for ETC
+Template: Divi
+*/
+
+/*** TABLE OF CONTENTS ***/
+/***
+0-Font
+1-PrimaryNav
+2-Footer
+3-Global
+4-Homepage
+5-HelpForm
+
+***/
+
+/*** ---------- 0-Font ------------ ***/
+@font-face {
+  font-family: 'Museo Sans Display';
+  src: url('fonts/MuseoSansDisplay-ExtraBlack.eot');
+  src: local('Museo Sans Display Extra Black'), local('MuseoSansDisplay-ExtraBlack'),
+      url('fonts/MuseoSansDisplay-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+      url('fonts/MuseoSansDisplay-ExtraBlack.woff2') format('woff2'),
+      url('fonts/MuseoSansDisplay-ExtraBlack.woff') format('woff'),
+      url('fonts/MuseoSansDisplay-ExtraBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*** ---------- 1-PrimaryNav ------------ ***/
+
+/* Adjust spacing between navigation elements */
+.et_pb_menu .et-menu-nav .et-menu > li {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+}
+
+/* Navigation hover effects */
+.et-menu-nav .et-menu a {
+  border-bottom: 2px solid #1c2f3d;
+}
+
+.et-menu-nav .et-menu a:hover {
+  opacity: 1;
+  border-bottom: 2px solid #edba75;
+  text-decoration: none;
+}
+
+/*remove dropdown menu border */
+.et-menu-nav .et-menu li li a {
+  border-bottom: 0px !important;
+}
+
+/*remove mobile menu border */
+.et_mobile_nav_menu a {
+  border-bottom: 0px !important;
+}
+
+/* Search Bar */
+.et_pb_menu .et_pb_menu__search-input {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.3);
+  padding: 10px;
+  max-width: 60%;
+  font-size: 16px;
+}
+
+/*Prevent overlapping rows blocking elements*/
+/*This prevents behavior on the nav menu's row */
+.et_pb_row.et_pb_row_1_tb_header.et_pb_row--with-menu {
+  pointer-events: none;
+}
+/* This re-enables it on the nav elements */
+div.et_pb_menu_inner_container.clearfix > div.et_pb_menu__wrap > *,
+div.et_pb_menu__search-container {
+  pointer-events: auto;
+}
+
+/* Mobile Menu */
+/* Prevent Divi JS error when adjusting mobile menu CSS */
+/*
+#mobile_menu1{ pointer-events: none; }
+#mobile_menu1 > *{ pointer-events: auto; }
+*/
+
+/* Adjust breakpoint for Mobile Menu */
+.mobile-social-media-icons {
+  padding-left: 15px;
+  padding-top: 15px;
+  display: flex;
+  list-style: none;
+}
+
+.mobile-social-media-icons:hover {
+  background-color: white !important;
+}
+
+.mobile-social-media-icons a {
+  width: 90px !important;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px !important;
+}
+
+.mobile-social-media-icons a img {
+  width: 40px !important;
+  height: auto;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1200px) {
+  .et_pb_menu .et_pb_menu__menu,
+  button.et_pb_menu__search-button {
+    display: none;
+  }
+  .et_mobile_nav_menu {
+    display: block;
+  }
+  .et_pb_menu .et_mobile_menu li ul,
+  button.et_pb_menu__search-button {
+    display: none !important;
+  }
+  .et_pb_menu .et_mobile_menu li ul.mobile-menu-unhide {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .et_pb_menu .et_mobile_menu {
+    padding: 0px;
+    margin-top: 27px;
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    border-top: 0px;
+  }
+  .et_pb_menu_0_tb_header.et_pb_menu ul li a.da11y-submenu {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    color: #1c2f3d !important;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    margin: 0px 20px;
+    border-bottom: 1px solid #edba75 !important;
+  }
+
+  .et_mobile_menu li li,
+  .et_pb_menu .et_mobile_menu li ul {
+    padding-left: 0px;
+  }
+
+  .et_mobile_menu li a:hover,
+  .nav ul li a:hover {
+    opacity: 1;
+  }
+
+  .et-l--header ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+
+  .et_pb_menu .et_mobile_menu li ul.mobile-menu-unhide,
+  .et-db #et-boc .et-l .et_pb_menu_0_tb_header.et_pb_menu .et_mobile_menu ul {
+    background-color: #f4f4f4 !important;
+    margin: -2px 20px 20px 20px;
+    border-top: 1px solid #ffffff;
+  }
+
+  /* Search Bar in Mobile */
+
+  input.et_pb_menu__search-input {
+    max-width: 90% !important;
+    padding: 15px;
+    margin: 20px auto !important;
+    color: #333333 !important;
+    font-size: 16px !important;
+    background-color: #e8e8e8 !important;
+    display: block;
+  }
+}
+
+/* Style Changes*/
+.nav li li {
+  padding: 0px;
+  width: 100%;
+}
+
+.et_pb_menu .et_pb_menu__menu > nav > ul > li > ul {
+  left: auto;
+  right: 0;
+}
+
+.et_pb_menu .et-menu-nav > ul ul {
+  padding: 0px;
+  border-top: 0px;
+}
+
+.et-menu li li a {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.et_pb_menu_0_tb_header.et_pb_menu ul li li a {
+  color: #1c2f3d !important;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+/*** Custom Homepage Navigation ***/
+
+.homepage ul li a.da11y-submenu {
+  border-bottom: 0px !important;
+}
+
+.homepage .et_pb_menu .et_pb_menu__search-input {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.8) !important;
+  max-width: 50%;
+  font-size: 16px;
+}
+
+/* Disappear Yellow border when small*/
+@media (max-width: 1900px) {
+  div#homepage-border {
+    display: none !important;
+  }
+}
+
+/*** ---------- 2-Footer ------------ ***/
+
+/* Footer - Resources List */
+
+footer a {
+  color: black;
+}
+
+div.footer-menu ul,
+div.footer-links,
+div.footer-menu-mobile ul {
+  list-style: none;
+  padding-left: 0px;
+  display: inline-block;
+}
+
+div.footer-menu {
+  width: 100%;
+}
+
+div.footer-menu li {
+  font-size: 16px;
+  padding: 3px 0;
+}
+
+div.footer-menu-col-1,
+div.footer-menu-col-2,
+div.footer-menu-col-3 {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+@media (max-width: 980px) {
+  .footer-menu-mobile .footer-menu-col-1,
+  .footer-menu-mobile .footer-menu-col-2,
+  .footer-menu-mobile .footer-menu-col-3 {
+    width: 28%;
+    padding-right: 0px;
+  }
+  .footer-menu-mobile ul li {
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-menu-mobile .footer-menu-col-1,
+  .footer-menu-mobile .footer-menu-col-2,
+  .footer-menu-mobile .footer-menu-col-3 {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .footer-menu-mobile ul {
+    padding-bottom: 0px;
+  }
+}
+
+/* Footer - Acceptable Use and Privacy Policy */
+div.footer-links li {
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+/* Footer headings */
+
+footer h4 {
+  letter-spacing: 0px;
+}
+
+/* Footer - Mailchimp */
+div#mc_embed_signup {
+  margin: 20px 0;
+}
+
+div.mc-field-group {
+  display: inline-block;
+  width: 70%;
+}
+
+div.clear {
+  display: inline-block;
+}
+
+footer input.email {
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 2px solid #edba75;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+}
+
+footer input.button {
+  padding: 10px 20px;
+  border-radius: 100px;
+  width: 100%;
+  border: 0px solid;
+  background-color: #edba75;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+footer input.button:hover {
+  text-decoration: underline;
+  background-color: #e09d43;
+}
+
+@media (max-width: 980px) {
+  div.mc-field-group {
+    display: block;
+    width: 100% !important;
+  }
+
+  div.clear {
+    width: 100% !important;
+  }
+}
+
+/* Footer - Social Icons */
+
+ul.social-icons li {
+  display: inline-block;
+  width: 40px;
+}
+
+ul.social-icons {
+  padding-left: 0px;
+  margin-top: 50px;
+}
+ul.social-icons li img {
+  max-height: 40px;
+}
+
+/*** ---------- 3-Global ------------ ***/
+a:hover {
+  text-decoration: underline;
+}
+
+/* Specific Text Styles */
+
+/* Inline Button within text */
+
+a.inline-button-text {
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  font-size: 14.5px;
+  display: inline-block;
+}
+
+a.inline-button-text::after {
+  content: "\35";
+  font-family: "ETmodules";
+  width: 11px;
+  display: inline-block;
+}
+
+/*** Breadcrumb Styling ***/
+
+/* Same color as Links */
+a.breadcrumb-link:before {
+  content: "\24";
+  font-family: "ETmodules";
+  font-weight: bold;
+  padding: 0 7px 0 3px;
+  display: inline-block;
+  pointer-events: none;
+}
+a.breadcrumb-link:hover:before {
+  text-decoration: none;
+}
+a.breadcrumb-link:first-child:before {
+  content: none !important;
+}
+
+/* Yellow color breadcrumb arrow */
+a.breadcrumb-link-yellow:before {
+  content: "\24";
+  font-family: "ETmodules";
+  font-weight: bold;
+  color: #edba75;
+  padding: 0 7px 0 3px;
+  display: inline-block;
+  pointer-events: none;
+}
+a.breadcrumb-link-yellow:hover:before {
+  text-decoration: none;
+}
+a.breadcrumb-link-yellow:first-child:before {
+  content: none !important;
+}
+
+/* White color breadcrumb arrow */
+a.breadcrumb-link-white:before {
+  content: "\24";
+  font-family: "ETmodules";
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0 7px 0 3px;
+  display: inline-block;
+  pointer-events: none;
+}
+a.breadcrumb-link-white:hover:before {
+  text-decoration: none;
+}
+a.breadcrumb-link-white:first-child:before {
+  content: none !important;
+}
+
+/* Orange color breadcrumb arrow */
+a.breadcrumb-link-orange:before {
+  content: "\24";
+  font-family: "ETmodules";
+  font-weight: bold;
+  color: #cc4927;
+  padding: 0 7px 0 3px;
+  display: inline-block;
+  pointer-events: none;
+}
+a.breadcrumb-link-orange:hover:before {
+  text-decoration: none;
+}
+a.breadcrumb-link-orange:first-child:before {
+  content: none !important;
+}
+
+/* Blue color breadcrumb arrow */
+a.breadcrumb-link-blue:before {
+  content: "\24";
+  font-family: "ETmodules";
+  font-weight: bold;
+  color: #194588;
+  padding: 0 7px 0 3px;
+  display: inline-block;
+  pointer-events: none;
+}
+a.breadcrumb-link-blue:hover:before {
+  text-decoration: none;
+}
+a.breadcrumb-link-blue:first-child:before {
+  content: none !important;
+}
+
+/*** Page Styles ***/
+
+/* Use: breadcrumbs */
+.childLinksUnderlineOnHover a:hover {
+  text-decoration: underline;
+}
+
+/* Use subtitle section (image-centric sections) */
+.makeImageCover.et_pb_image .et_pb_image_wrap {
+  width: 100%;
+}
+
+.makeImageCover.et_pb_image .et_pb_image_wrap img {
+  object-fit: cover;
+  width: inherit;
+}
+
+/* Use: apply now button, mis elements */
+body #page-container .et_pb_section .et_pb_button.applyNowButton::after {
+  right: 0;
+  top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  background-color: #b13211;
+}
+
+/* Custom Order Rows */
+
+@media all and (max-width: 980px) {
+  /*** wrap row in a flex box ***/
+  .custom_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+  }
+
+  /*** custom classes that will designate the order of columns in the flex box row ***/
+  .first-on-mobile {
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .second-on-mobile {
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .third-on-mobile {
+    -webkit-order: 3;
+    order: 3;
+  }
+
+  .fourth-on-mobile {
+    -webkit-order: 4;
+    order: 4;
+  }
+  /*** add margin to last column ***/
+  .custom_row:last-child .et_pb_column:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+/*** ---------- 4-Homepage ------------ ***/
+
+@media (max-width: 1200px) {
+  ul#mobile_menu2 .et_pb_menu__search-input {
+    display: none;
+  }
+
+  ul#mobile_menu2 .mobile-social-container {
+    display: none !important;
+  }
+
+  ul#mobile_menu2 {
+    padding: 0px;
+    padding-left: 0px;
+    background-color: white !important;
+    border-top: 0px solid #ffffff;
+  }
+
+  #audience-area div.et_pb_row {
+    min-height: 40px !important;
+    width: 100% !important;
+  }
+
+  #audience-area .et_pb_fullwidth_menu--style-left_aligned .et_pb_menu__wrap {
+    justify-content: flex-start;
+    width: 100% !important;
+  }
+
+  #audience-area div.et_pb_row,
+  #audience-area .et_pb_fullwidth_menu .et_mobile_nav_menu,
+  #audience-area .mobile_nav {
+    width: 100%;
+    padding: 0px 5px;
+  }
+
+  #audience-area ::before {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #audience-area ul#mobile_menu2 li a {
+    text-transform: none !important;
+  }
+
+  .dropdown-button .et_pb_fullwidth_menu .et_pb_row {
+    width: 100%;
+  }
+  .dropdown-button .mobile_menu_bar {
+    height: 40px;
+  }
+  .dropdown-button .mobile_menu_bar:before {
+    font-family: inherit !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: #ffffff !important;
+    letter-spacing: 2px !important;
+    content: "Select Audience";
+    line-height: 40px;
+    top: 0px;
+  }
+  .dropdown-button .mobile_menu_bar:after {
+    position: absolute;
+    line-height: 40px;
+    font-family: ETmodules;
+    font-size: 20px;
+    font-weight: 800;
+    content: "3";
+    right: 0;
+    padding-left: 20px;
+    color: #edba75;
+  }
+}
+
+/*** ---------- 5-COE Online Form ------------ ***/
+
+/*** ---------- 5-HelpForm ------------ ***/
+
+.cf-inputarea {
+  padding-bottom: 15px;
+}
+
+.cf-inputarea p {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
+
+.cf-inputarea .wpcf7-not-valid-tip {
+  text-transform: none !important;
+  letter-spacing: 0px;
+}
+
+.cf-inputarea input,
+.cf-inputarea select,
+.cf-inputarea textarea {
+  width: 100%;
+  border: 0px solid white;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #222222;
+}
+
+.cf-inputarea-textarea {
+  padding-bottom: 10px !important;
+}
+
+input.wpcf7-submit {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: #194588;
+  border: 2px solid #194588;
+  border-radius: 50px;
+  padding: 8px 30px;
+  font-family: "Museo sans", sans-serif;
+}
+input.wpcf7-submit:hover {
+  background-color: #194588;
+  color: #ffffff;
+}
