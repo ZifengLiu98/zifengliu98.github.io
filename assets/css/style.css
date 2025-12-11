@@ -716,22 +716,4 @@ small {
   }
 }
 
-.typing {
-  color: #ffffff !important;      /* 强制白色显示 */
-  font-weight: 600;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
-  text-shadow: 0 0 6px rgba(0,0,0,0.4);
-}
-
-.typing::after {
-  content: '|';
-  animation: blink 1s infinite;
-  color: #ffffff !important;
-}
-
-@keyframes blink {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
-}
 
