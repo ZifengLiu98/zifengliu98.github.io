@@ -30,9 +30,12 @@
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
-  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
   width: auto;
-  text-align: inherit;
   /* padding: 10px; */
 }
 
@@ -44,12 +47,26 @@
   color: #FFFFFF;
   cursor: pointer;
   font-size: 30px;
-  line-height: 70px;
+  flex: 0 0 50px;
+  line-height: 1;
   border-radius: 45px;
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  margin: 4px;
+  margin: 4px 0;
+  vertical-align: middle;
+}
+
+.icon-btn i {
+  display: block;
+  line-height: 1;
+}
+
+.icon-btn img {
+  display: block;
+  height: 24px;
+  object-fit: contain;
+  width: 24px;
 }
 
 .github {
@@ -782,6 +799,20 @@ ul.side-nav.fixed {
 
 ul.side-nav.fixed a {
   color: var(--primary) !important;
+}
+
+.side-nav .nav-position-icon {
+  font-size: 2rem;
+  padding: 0 !important;
+  text-align: center;
+  top: 2px;
+  width: 54px;
+}
+
+.side-nav a:focus-visible {
+  background: #edf4f5;
+  box-shadow: inset 4px 0 0 var(--accent);
+  outline: none;
 }
 
 ul.table-of-contents li:not(.logo) a.active,
