@@ -1,5 +1,5 @@
-# Personal Portfolio ⚡️ 
-> A clean, beautiful, responsive portfolio template for Software Developers! (Adopted from https://varadbhogayata.github.io)
+# Zifeng (Lauren) Liu — Academic Portfolio
+> Personal academic website for Zifeng (Lauren) Liu, Ph.D., Postdoctoral Associate at the University of Miami.
 
 > https://ZifengLiu98.github.io/
 
@@ -12,8 +12,6 @@
   </kbd>
 </p>
 
-:star: Star me on GitHub — it helps!
-
 ## Features 📋
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
@@ -22,7 +20,7 @@
 
 ## Installation & Deployment 📦
 - Clone the repository and modify the content of <b>index.html</b> according to your requirement.
-- Add or remove images from `varadbhogayata.github.io/assets/img/` directory as per your requirement.
+- Add or remove images from the `assets/img/` directory as needed.
 - I highly recommend to use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to deploy the website the EASIEST WAY.
 - To deploy your website, first you need to create github repository with name `<your-github-username>.github.io`. Please don't give any other name.
 - Push the generated code to the `master` branch of this repository.
