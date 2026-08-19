@@ -801,14 +801,6 @@ ul.side-nav.fixed a {
   color: var(--primary) !important;
 }
 
-.side-nav .nav-position-icon {
-  font-size: 2rem;
-  padding: 0 !important;
-  text-align: center;
-  top: 2px;
-  width: 54px;
-}
-
 .side-nav a:focus-visible {
   background: #edf4f5;
   box-shadow: inset 4px 0 0 var(--accent);
